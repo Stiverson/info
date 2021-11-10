@@ -1,12 +1,10 @@
 package br.com.aprendizes.info.service;
 
-import br.com.aprendizes.info.domain.provedor.Curso;
-import br.com.aprendizes.info.domain.provedor.DadoPessoal;
-import br.com.aprendizes.info.domain.provedor.Filme;
-import br.com.aprendizes.info.domain.provedor.InfoProvedor;
+import br.com.aprendizes.info.domain.provedor.*;
 import br.com.aprendizes.info.domain.response.CursosResponse;
 import br.com.aprendizes.info.domain.response.DadoPessoalResponse;
 import br.com.aprendizes.info.domain.response.FilmesResponse;
+import br.com.aprendizes.info.domain.response.ViagensResponse;
 import br.com.aprendizes.info.util.*;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +13,10 @@ import java.util.List;
 
 @Service
 public class InfoService {
+
+    public InfoProvedor obterInfo() {
+        return InfoRepositoryMock.mockInfoProvedorResponse();
+    }
 
     public FilmesResponse obterFilmes(Integer idPessoa) {
         List<Filme> filmesListProvedor = FilmesRepositoryMock.mockFilmesProvedorResponse();
@@ -38,8 +40,7 @@ public class InfoService {
         return new CursosResponse(cursosListResponse);
     }
 
-
-    public DadoPessoalResponse obterInformacoes(Integer idPessoa) {
+    public DadoPessoalResponse obterDadosPessoais(Integer idPessoa) {
         List<DadoPessoal> dadosListProvedor = DadosPessoalRepositoryMock.mockDadoPessoalResponse();
         List<DadoPessoal> dadosListResponse = new ArrayList<>();
         for (DadoPessoal dadoPessoal : dadosListProvedor) {
@@ -50,8 +51,15 @@ public class InfoService {
         return new DadoPessoalResponse(dadosListResponse);
     }
 
-    public InfoProvedor obterInfo() {
-        return InfoRepositoryMock.mockInfoProvedorResponse();
+    public ViagensResponse obterViagens(Integer idPessoa) {
+        List<Viagens> viagensListProvedor = ViagensRepositoryMock.mockViagensResponse();
+        List<Viagens> viagensListResponse = new ArrayList<>();
+        for (Viagens viagens: viagensListProvedor){
+            if (idPessoa == viagens.getIdPessoa()){
+                viagensListResponse.add(viagens);
+            }
+        }
+        return new ViagensResponse(viagensListResponse);
     }
 
 }

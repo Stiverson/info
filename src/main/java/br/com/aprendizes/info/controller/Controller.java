@@ -6,6 +6,7 @@ import br.com.aprendizes.info.domain.provedor.InfoProvedor;
 import br.com.aprendizes.info.domain.response.CursosResponse;
 import br.com.aprendizes.info.domain.response.DadoPessoalResponse;
 import br.com.aprendizes.info.domain.response.FilmesResponse;
+import br.com.aprendizes.info.domain.response.ViagensResponse;
 import br.com.aprendizes.info.service.InfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -37,8 +38,13 @@ public class Controller {
        return ResponseEntity.ok(infoService.obterCurso(idPessoa));
    }
 
-    @GetMapping("/dadospessoal/{id_pessoa}")
-   public ResponseEntity<DadoPessoalResponse> obterInformacoes(@PathVariable(name = "id_pessoa") Integer idPessoa){
-        return ResponseEntity.ok(infoService.obterInformacoes(idPessoa));
+   @GetMapping("/dadospessoais/{id_pessoa}")
+   public ResponseEntity<DadoPessoalResponse> obterDadosPessoais(@PathVariable(name = "id_pessoa") Integer idPessoa){
+        return ResponseEntity.ok(infoService.obterDadosPessoais(idPessoa));
+    }
+
+    @GetMapping("/viagens/{id_pessoa}")
+    public ResponseEntity<ViagensResponse>  obterViagens(@PathVariable(name = "id_pessoa") Integer idPessoa){
+        return  ResponseEntity.ok(infoService.obterViagens(idPessoa));
     }
 }
