@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 public class Curso {
 
     private Integer idPessoa;
-    private String nomeDoAluno;
     private String titulo;
     private String instituicao;
 }

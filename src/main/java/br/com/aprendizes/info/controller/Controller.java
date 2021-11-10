@@ -2,6 +2,7 @@ package br.com.aprendizes.info.controller;
 
 
 import br.com.aprendizes.info.domain.provedor.InfoProvedor;
+import br.com.aprendizes.info.domain.response.CursosResponse;
 import br.com.aprendizes.info.domain.response.FilmesResponse;
 import br.com.aprendizes.info.service.InfoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,10 +30,10 @@ public class Controller {
         return ResponseEntity.ok(infoService.obterFilmes(idPessoa));
     }
 
-//    @GetMapping("/cursos")
-//    public ResponseEntity<List<Curso>> obterCursos() {
-//        return ResponseEntity.ok(infoService.obterCursos());
-//    }
+    @GetMapping("/cursos/{id_pessoa}")
+    public ResponseEntity<CursosResponse> obterCursos(@PathVariable(name = "id_pessoa") Integer idPessoa) {
+       return ResponseEntity.ok(infoService.obterCurso(idPessoa));
+   }
 /*
     @GetMapping("/dadospessoal/{id}")
     public ResponseEntity<DadoPessoal> obterInformacoes(@PathVariable(name = "id") Integer id ) {
