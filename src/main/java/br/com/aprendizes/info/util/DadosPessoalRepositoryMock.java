@@ -11,7 +11,7 @@ public class DadosPessoalRepositoryMock {
     public static List<DadoPessoal> mockDadoPessoalResponse() {
         List<DadoPessoal> dadoPessoalList = new ArrayList<>();
         DadoPessoal dadosPessoal = new DadoPessoal();
-        dadosPessoal.setId(1);
+        dadosPessoal.setIdPessoa(1);
         dadosPessoal.setNome("Mikael Santos Lima");
         dadosPessoal.setIdade(17);
         dadosPessoal.setNacionalidade("Brasileiro");
@@ -25,7 +25,7 @@ public class DadosPessoalRepositoryMock {
 
 
         DadoPessoal dadosPessoal2 = new DadoPessoal();
-        dadosPessoal2.setId(2);
+        dadosPessoal2.setIdPessoa(2);
         dadosPessoal2.setNome("Gabriela Manoeli Tavares da Silva");
         dadosPessoal2.setIdade(16);
         dadosPessoal2.setNacionalidade("Brasileiro");

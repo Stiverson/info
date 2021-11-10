@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class DadoPessoal {
-    private Integer id;
+    private Integer idPessoa;
     private String nome;
     private Integer idade;
     private String nacionalidade;
