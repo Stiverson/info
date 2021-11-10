@@ -3,7 +3,7 @@ package br.com.aprendizes.info.domain.provedor;
 import lombok.Data;
 
 @Data
-public class Filmes {
+public class Filme {
 
     private Integer idPessoa;
     private String titulo;

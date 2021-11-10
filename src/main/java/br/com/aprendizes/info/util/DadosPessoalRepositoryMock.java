@@ -3,10 +3,13 @@ package br.com.aprendizes.info.util;
 
 import br.com.aprendizes.info.domain.provedor.DadoPessoal;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DadosPessoalRepositoryMock {
 
-    public static void mockDadoPessoalResponse() {
-
+    public static List<DadoPessoal> mockDadoPessoalResponse() {
+        List<DadoPessoal> dadoPessoalList = new ArrayList<>();
         DadoPessoal dadosPessoal = new DadoPessoal();
         dadosPessoal.setId(1);
         dadosPessoal.setNome("Mikael Santos Lima");
@@ -33,6 +36,11 @@ public class DadosPessoalRepositoryMock {
         dadosPessoal2.setEmail("gabrielamt@ciandt.com");
         dadosPessoal2.setNomeEscola("E.E.Hugo Penteado Teixeira");
         dadosPessoal2.setEscolaridade("Ensino Medio-2ºAno(cursando)");
+
+        dadoPessoalList.add(dadosPessoal);
+        dadoPessoalList.add(dadosPessoal2);
+
+        return  dadoPessoalList;
 
     }
 

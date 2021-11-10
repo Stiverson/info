@@ -2,13 +2,13 @@ package br.com.aprendizes.info.domain.provedor;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
+import java.util.List;
+
+
 @AllArgsConstructor
 @Data
-public class Filmes {
+public class InfoProvedor {
 
-    private Pessoa pessoa;
-
+    private List<Pessoa> data;
 }

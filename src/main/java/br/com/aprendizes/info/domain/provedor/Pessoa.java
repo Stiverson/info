@@ -7,10 +7,11 @@ import java.util.List;
 
 @Data
 public class Pessoa {
-    private String nomePessoa;
-    private int idade;
-    private boolean cinefolo;
+    private DadoPessoal dadoPessoal;
+    private boolean cineFolo;
     private boolean gamer;
-    private List<Filmes> filmes = new ArrayList<>();
+    private List<Filme> filmes = new ArrayList<>();
     private List<Series> series = new ArrayList<>();
+    private List<Viagens> viagens = new ArrayList<>();
+    private List<Curso> cursos = new ArrayList<>();
 }

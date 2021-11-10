@@ -1,17 +1,16 @@
 package br.com.aprendizes.info.util;
 
-import br.com.aprendizes.info.domain.provedor.Filmes;
-import com.google.gson.Gson;
+import br.com.aprendizes.info.domain.provedor.Filme;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class FilmesRepositoryMock {
 
-    public static List<Filmes> mockFilmesProvedorResponse(){
-        List<Filmes> filmeList = new ArrayList<>();
+    public static List<Filme> mockFilmesProvedorResponse(){
+        List<Filme> filmeList = new ArrayList<>();
 
-        Filmes duna = new Filmes();
+        Filme duna = new Filme();
         duna.setIdPessoa(1);
         duna.setTitulo("Duna");
         duna.setDiretor("Denis Vileneve");
@@ -20,7 +19,7 @@ public class FilmesRepositoryMock {
         duna.setElenco("");
         duna.setStreaming("HBOMAX");
 
-        Filmes spiderverse = new Filmes();
+        Filme spiderverse = new Filme();
         spiderverse.setIdPessoa(1);
         spiderverse.setTitulo("Homem Aranha no Aranha verso");
         spiderverse.setDiretor("");
@@ -32,7 +31,7 @@ public class FilmesRepositoryMock {
         filmeList.add(duna);
         filmeList.add(spiderverse);
 
-        Filmes jogosvorazes = new Filmes();
+        Filme jogosvorazes = new Filme();
         jogosvorazes.setIdPessoa(2);
         jogosvorazes.setTitulo("Jogos Vorazes");
         jogosvorazes.setDiretor("Gary Ross");

@@ -5,9 +5,10 @@ import lombok.Data;
 @Data
 public class Viagens {
 
-    public String cidade;
-    public String data;
-    public String local;
+    private Integer idPessoa;
+    private String cidade;
+    private String data;
+    private String local;
 
 
 }
