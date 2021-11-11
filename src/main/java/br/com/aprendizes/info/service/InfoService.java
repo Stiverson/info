@@ -1,9 +1,10 @@
 package br.com.aprendizes.info.service;
 
-import br.com.aprendizes.info.domain.provedor.Filme;
-import br.com.aprendizes.info.domain.provedor.Info;
-import br.com.aprendizes.info.domain.provedor.InfoProvedor;
+import br.com.aprendizes.info.domain.provedor.*;
+import br.com.aprendizes.info.domain.response.CursosResponse;
+import br.com.aprendizes.info.domain.response.DadoPessoalResponse;
 import br.com.aprendizes.info.domain.response.FilmesResponse;
+import br.com.aprendizes.info.domain.response.ViagensResponse;
 import br.com.aprendizes.info.util.*;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +13,10 @@ import java.util.List;
 
 @Service
 public class InfoService {
+
+    public InfoProvedor obterInfo() {
+        return InfoRepositoryMock.mockInfoProvedorResponse();
+    }
 
     public FilmesResponse obterFilmes(Integer idPessoa) {
         List<Filme> filmesListProvedor = FilmesRepositoryMock.mockFilmesProvedorResponse();
@@ -24,8 +29,37 @@ public class InfoService {
         return new FilmesResponse(filmesListResponse);
     }
 
-    public InfoProvedor obterInfo() {
-        return InfoRepositoryMock.mockInfoProvedorResponse();
+    public CursosResponse obterCurso(Integer idPessoa) {
+        List<Curso> cursosListProvedor = CursosRepositoryMock.mockCursoResponse();
+        List<Curso> cursosListResponse = new ArrayList<>();
+        for (Curso curso : cursosListProvedor) {
+            if (idPessoa == curso.getIdPessoa()) {
+                cursosListResponse.add(curso);
+            }
+        }
+        return new CursosResponse(cursosListResponse);
+    }
+
+    public DadoPessoalResponse obterDadosPessoais(Integer idPessoa) {
+        List<DadoPessoal> dadosListProvedor = DadosPessoalRepositoryMock.mockDadoPessoalResponse();
+        List<DadoPessoal> dadosListResponse = new ArrayList<>();
+        for (DadoPessoal dadoPessoal : dadosListProvedor) {
+            if (idPessoa == dadoPessoal.getIdPessoa()) {
+                dadosListResponse.add(dadoPessoal);
+            }
+        }
+        return new DadoPessoalResponse(dadosListResponse);
+    }
+
+    public ViagensResponse obterViagens(Integer idPessoa) {
+        List<Viagens> viagensListProvedor = ViagensRepositoryMock.mockViagensResponse();
+        List<Viagens> viagensListResponse = new ArrayList<>();
+        for (Viagens viagens: viagensListProvedor){
+            if (idPessoa == viagens.getIdPessoa()){
+                viagensListResponse.add(viagens);
+            }
+        }
+        return new ViagensResponse(viagensListResponse);
     }
 
 }
