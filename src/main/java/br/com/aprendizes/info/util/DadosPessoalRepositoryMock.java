@@ -27,7 +27,7 @@ public class DadosPessoalRepositoryMock {
         DadoPessoal dadosPessoal2 = new DadoPessoal();
         dadosPessoal2.setIdPessoa(2);
         dadosPessoal2.setNome("Gabriela Manoeli Tavares da Silva");
-        dadosPessoal2.setIdade(16);
+        dadosPessoal2.setIdade(17);
         dadosPessoal2.setNacionalidade("Brasileiro");
         dadosPessoal2.setEstadoCivil("Solteira");
         dadosPessoal2.setDataNascimento("06/10/2004");

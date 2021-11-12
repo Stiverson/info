@@ -37,10 +37,21 @@ public class FilmesRepositoryMock {
         jogosvorazes.setDiretor("Gary Ross");
         jogosvorazes.setDuracao("2H,22");
         jogosvorazes.setData_lancamento("22/03/2012");
-        jogosvorazes.setElenco("");
+        jogosvorazes.setElenco(" Jennifer Lawrence; Josh Hutcherson; Liam Hemsworth");
         jogosvorazes.setStreaming("Netflix e Amazon Prime");
 
+        Filme alerta_vermelho = new Filme();
+        alerta_vermelho.setIdPessoa(2);
+        alerta_vermelho.setTitulo("Alerta Vermelho");
+        alerta_vermelho.setDiretor("Rawson Marshall Thurber");
+        alerta_vermelho.setDuracao("1h,55");
+        alerta_vermelho.setData_lancamento("12/11/2021");
+        alerta_vermelho.setElenco("Gal Gadot, Dwayne Johnson, Ryan Renolds");
+        alerta_vermelho.setStreaming("Netflix e Amazon Prime");
+
         filmeList.add(jogosvorazes);
+        filmeList.add(alerta_vermelho);
+
 
         return  filmeList;
     }
