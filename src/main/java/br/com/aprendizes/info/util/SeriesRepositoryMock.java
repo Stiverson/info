@@ -16,7 +16,7 @@ public class SeriesRepositoryMock {
         prisonBreak.setTitulo("");
         prisonBreak.setDiretor("");
         prisonBreak.setPrimeiroEpisodio("");
-        prisonBreak.setUltimoEpisodio("");
+        prisonBreak.setUltimoEpisodio("11/12");
         prisonBreak.setElenco("Ela");
         prisonBreak.setStreaming("Netflix");
 
