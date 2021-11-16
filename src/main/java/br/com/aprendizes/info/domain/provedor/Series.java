@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 public class Series {
     private Integer idPessoa;
     private String titulo;
-    private String protagonistas;
     private String diretor;
     private String primeiroEpisodio;
     private String ultimoEpisodio;
