@@ -13,7 +13,7 @@ public class SeriesRepositoryMock {
 
         Series prisonBreak = new Series();
         prisonBreak.setIdPessoa(1);
-        prisonBreak.setTitulo("");
+        prisonBreak.setTitulo("Prison Break");
         prisonBreak.setDiretor("");
         prisonBreak.setPrimeiroEpisodio("");
         prisonBreak.setUltimoEpisodio("11/12");

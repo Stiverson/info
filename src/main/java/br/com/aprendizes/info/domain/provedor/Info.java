@@ -15,4 +15,5 @@ public class Info {
     private List<Curso> cursos;
     private List<Filme> filmes;
     private List<Viagens> viagens;
+    private List<Series> series;
 }
