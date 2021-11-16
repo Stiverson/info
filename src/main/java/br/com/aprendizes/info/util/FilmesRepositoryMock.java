@@ -16,7 +16,7 @@ public class FilmesRepositoryMock {
         duna.setDiretor("Denis Vileneve");
         duna.setDuracao("2H,28");
         duna.setData_lancamento("21/10/2021");
-        duna.setElenco("");
+        duna.setElenco("Stiverson");
         duna.setStreaming("HBOMAX");
 
         Filme spiderverse = new Filme();
