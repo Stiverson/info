@@ -37,7 +37,7 @@ public class SeriesRepositoryMock {
         blindspot.setDiretor("Martin Gero, Brendan Gall");
         blindspot.setPrimeiroEpisodio("21/09/2015");
         blindspot.setUltimoEpisodio("23/07/2020");
-        blindspot.setElenco("Jaimie Alexander, Sullivan Stapleton, Rob Brown, Audrey Esparza, Ashley Johnson, Ennis Esmer");
+        blindspot.setElenco("Jaimie Alexander, Sullivan Stapleton, Rob Brown, Audrey Esparza, Ashley Johnson, Ennis Esmer'");
         blindspot.setStreaming("National Broadcasting Company");
 
 
