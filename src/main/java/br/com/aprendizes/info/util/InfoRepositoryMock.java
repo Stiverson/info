@@ -210,9 +210,9 @@ public class InfoRepositoryMock {
         blindspot.setElenco("Jaimie Alexander, Sullivan Stapleton, Rob Brown, Audrey Esparza, Ashley Johnson, Ennis Esmer'");
         blindspot.setStreaming("National Broadcasting Company");
 
-        pessoa.setSeries(seriesList);
-
         seriesList.add(goodGirls);
+
+        pessoa.setSeries(seriesList);
 
         return new InfoProvedor(pessoaList);
     }
