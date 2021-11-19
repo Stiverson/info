@@ -16,17 +16,17 @@ public class FilmesRepositoryMock {
         duna.setDiretor("Denis Vileneve");
         duna.setDuracao("2H,28");
         duna.setData_lancamento("21/10/2021");
-        duna.setElenco("Stiverson");
+        duna.setElenco("Chani, Paul Atreides, Jessica Atreides, Duncan Idaho");
         duna.setStreaming("HBOMAX");
 
         Filme spiderverse = new Filme();
         spiderverse.setIdPessoa(1);
-        spiderverse.setTitulo("Homem Aranha no Aranha verso");
-        spiderverse.setDiretor("");
-        spiderverse.setDuracao("");
-        spiderverse.setData_lancamento("");
-        spiderverse.setElenco("");
-        spiderverse.setStreaming("Netflix");
+        spiderverse.setTitulo("Homem Aranha no Aranhaverso");
+        spiderverse.setDiretor("Peter Ramsey, Rodney Rothman, Bob Persichetti");
+        spiderverse.setDuracao("1H,56");
+        spiderverse.setData_lancamento("10/01/2019");
+        spiderverse.setElenco("Miles Morales, Homem-Aranha,Spider-Women,Gatuno, Rei do Crime,");
+        spiderverse.setStreaming("Telecine");
 
         filmeList.add(duna);
         filmeList.add(spiderverse);
@@ -37,7 +37,7 @@ public class FilmesRepositoryMock {
         jogosvorazes.setDiretor("Gary Ross");
         jogosvorazes.setDuracao("2H,22");
         jogosvorazes.setData_lancamento("22/03/2012");
-        jogosvorazes.setElenco("");
+        jogosvorazes.setElenco("Katniss Everdeen, Gale Hawthome, peeta Mellark");
         jogosvorazes.setStreaming("Netflix e Amazon Prime");
 
         filmeList.add(jogosvorazes);
