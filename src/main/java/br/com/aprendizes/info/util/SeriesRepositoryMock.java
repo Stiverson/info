@@ -31,6 +31,8 @@ public class SeriesRepositoryMock {
         goodGirls.setElenco("Christina Hendricks, Retta, Mae Whitman, Manny Montana, Reno Wilson, Matthew Lillard");
         goodGirls.setStreaming("NBC");
 
+        seriesList.add(goodGirls);
+
         Series blindspot = new Series();
         blindspot.setIdPessoa(2);
         blindspot.setTitulo("Blindspot");
@@ -41,8 +43,17 @@ public class SeriesRepositoryMock {
         blindspot.setStreaming("National Broadcasting Company");
 
 
-        seriesList.add(goodGirls);
+        seriesList.add(blindspot);
 
+        Series pll = new Series();
+        pll.setIdPessoa(2);
+        pll.setTitulo("Pretty Little Liars");
+        pll.setDiretor("I. Marlene King");
+        pll.setPrimeiroEpisodio("06/06/2010");
+        pll.setUltimoEpisodio("21/06/2016");
+        pll.setElenco("Troian Bellisario, Lucy Hale, Ashley Benson, Shay Mitchell");
+        pll.setStreaming("Freeform");
+        pll.setOpiniao(true);
 
         return seriesList;
     }

@@ -16,5 +16,6 @@ public class Series {
     private String ultimoEpisodio;
     private String elenco;
     private String streaming;
+    private boolean opiniao;
 
 }
