@@ -13,11 +13,11 @@ public class FilmesRepositoryMock {
         Filme truqueDeMestre = new Filme();
         truqueDeMestre.setIdPessoa(1);
         truqueDeMestre.setTitulo("truque de Mestre");
-        truqueDeMestre.setDiretor("Denis Vileneve");
-        truqueDeMestre.setDuracao("2H,28");
-        truqueDeMestre.setData_lancamento("21/10/2021");
-        truqueDeMestre.setElenco("Chani, Paul Atreides, Jessica Atreides, Duncan Idaho");
-        truqueDeMestre.setStreaming("HBOMAX");
+        truqueDeMestre.setDiretor("");
+        truqueDeMestre.setDuracao("1H,55");
+        truqueDeMestre.setData_lancamento("05/07/2013");
+        truqueDeMestre.setElenco("");
+        truqueDeMestre.setStreaming("");
 
         filmeList.add(truqueDeMestre);
 
@@ -35,11 +35,11 @@ public class FilmesRepositoryMock {
         Filme chappie = new Filme();
         chappie.setIdPessoa(2);
         chappie.setTitulo("Chappie");
-        chappie.setDiretor("Gary Ross");
-        chappie.setDuracao("2H,22");
-        chappie.setData_lancamento("22/03/2012");
-        chappie.setElenco("Katniss Everdeen, Gale Hawthome, peeta Mellark");
-        chappie.setStreaming("Netflix e Amazon Prime");
+        chappie.setDiretor("Neill Blomkamp");
+        chappie.setDuracao("2H,00");
+        chappie.setData_lancamento("16/04/2015");
+        chappie.setElenco("Hugh Jackman(Vicent), Dev Patel(Deon), Sharlto Copley(Chappie)");
+        chappie.setStreaming("Netflix");
 
         filmeList.add(chappie);
 
