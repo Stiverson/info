@@ -42,7 +42,6 @@ public class SeriesRepositoryMock {
         blindspot.setElenco("Jaimie Alexander, Sullivan Stapleton, Rob Brown, Audrey Esparza, Ashley Johnson, Ennis Esmer'");
         blindspot.setStreaming("National Broadcasting Company");
 
-
         seriesList.add(blindspot);
 
         Series pll = new Series();
@@ -53,7 +52,7 @@ public class SeriesRepositoryMock {
         pll.setUltimoEpisodio("21/06/2016");
         pll.setElenco("Troian Bellisario, Lucy Hale, Ashley Benson, Shay Mitchell");
         pll.setStreaming("Freeform");
-        pll.setOpiniao(true);
+
 
         return seriesList;
     }
