@@ -19,5 +19,6 @@ public class DadoPessoal {
     private String email;
     private String nomeEscola;
     private String escolaridade;
+    private String linkedin;
 
 }

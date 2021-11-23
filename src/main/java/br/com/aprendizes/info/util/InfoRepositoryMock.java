@@ -23,6 +23,7 @@ public class InfoRepositoryMock {
         dadosPessoal.setEmail("mikaelsl@ciandt.com");
         dadosPessoal.setNomeEscola("E.E.Profº Hildebrando Siqueira");
         dadosPessoal.setEscolaridade("Ensino Medio-3ºAno(cursando)");
+        dadosPessoal.setLinkedin("https://www.linkedin.com/in/mikael-lima-a51548205/");
 
         pessoa.setDadoPessoal(dadosPessoal);
         pessoa.setCineFolo(true);
@@ -117,6 +118,7 @@ public class InfoRepositoryMock {
         dadosPessoal2.setEmail("gabrielamt@ciandt.com");
         dadosPessoal2.setNomeEscola("E.E.Hugo Penteado Teixeira");
         dadosPessoal2.setEscolaridade("Ensino Medio-2ºAno(cursando)");
+        dadosPessoal2.setLinkedin("https://www.linkedin.com/in/gabriela-manoeli-tavares-87682b1a7/");
 
         pessoa2.setDadoPessoal(dadosPessoal2);
         pessoa2.setCineFolo(true);

@@ -14,7 +14,7 @@ public class CursosRepositoryMock {
         Curso curso = new Curso();
         curso.setIdPessoa(1);
         curso.setTitulo("HTML & CSS3");
-        curso.setInstituicao("ALura");
+        curso.setInstituicao("Alura");
 
         cursoList.add(curso);
 
@@ -35,7 +35,7 @@ public class CursosRepositoryMock {
         Curso curso4 = new Curso();
         curso4.setIdPessoa(2);
         curso4.setTitulo("HTML & CSS3");
-        curso4.setInstituicao("ALura");
+        curso4.setInstituicao("Alura");
 
         cursoList.add(curso4);
 
