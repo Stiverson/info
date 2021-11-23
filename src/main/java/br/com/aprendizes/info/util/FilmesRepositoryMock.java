@@ -13,11 +13,11 @@ public class FilmesRepositoryMock {
         Filme truqueDeMestre = new Filme();
         truqueDeMestre.setIdPessoa(1);
         truqueDeMestre.setTitulo("truque de Mestre");
-        truqueDeMestre.setDiretor("");
+        truqueDeMestre.setDiretor("Louis Leterrier");
         truqueDeMestre.setDuracao("1H,55");
         truqueDeMestre.setData_lancamento("05/07/2013");
-        truqueDeMestre.setElenco("");
-        truqueDeMestre.setStreaming("");
+        truqueDeMestre.setElenco("Jesse Eisemberg(Atlas), Woody Harrelson(McKinny), Dave Franco(Jack), Isla fisher(Harley)");
+        truqueDeMestre.setStreaming("Netflix");
 
         filmeList.add(truqueDeMestre);
 
