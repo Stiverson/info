@@ -21,7 +21,7 @@ public class InfoRepositoryMock {
         dadosPessoal.setEndereco("Bairro Jardim Eulina, Campinas, SP");
         dadosPessoal.setTelefone("(19) 99595-5917");
         dadosPessoal.setEmail("mikaelsl@ciandt.com");
-        dadosPessoal.setNomeEscola("E.E.Profº Hildebrando Siqueira");
+        dadosPessoal.setNomeEscola("E.E.Profº Miguel Vicente Cury");
         dadosPessoal.setEscolaridade("Ensino Medio-3ºAno(cursando)");
         dadosPessoal.setLinkedin("https://www.linkedin.com/in/mikael-lima-a51548205/");
 
