@@ -53,6 +53,7 @@ public class SeriesRepositoryMock {
         pll.setElenco("Troian Bellisario, Lucy Hale, Ashley Benson, Shay Mitchell");
         pll.setStreaming("Freeform");
 
+        seriesList.add(pll);
 
         return seriesList;
     }

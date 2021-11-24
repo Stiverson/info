@@ -131,10 +131,22 @@ public class InfoRepositoryMock {
         jogosvorazes.setDiretor("Gary Ross");
         jogosvorazes.setDuracao("2H,22");
         jogosvorazes.setData_lancamento("22/03/2012");
-        jogosvorazes.setElenco("");
+        jogosvorazes.setElenco(" Jennifer Lawrence; Josh Hutcherson; Liam Hemsworth");
         jogosvorazes.setStreaming("Netflix e Amazon Prime");
 
         filmes.add(jogosvorazes);
+        pessoa2.setFilmes(filmes);
+
+        Filme alerta_vermelho = new Filme();
+        alerta_vermelho.setIdPessoa(2);
+        alerta_vermelho.setTitulo("Alerta Vermelho");
+        alerta_vermelho.setDiretor("Rawson Marshall Thurber");
+        alerta_vermelho.setDuracao("1h,55");
+        alerta_vermelho.setData_lancamento("12/11/2021");
+        alerta_vermelho.setElenco("Gal Gadot, Dwayne Johnson, Ryan Renolds");
+        alerta_vermelho.setStreaming("Netflix e Amazon Prime");
+
+        filmes.add(alerta_vermelho);
         pessoa2.setFilmes(filmes);
 
         List<Viagens> viagensList2 = new ArrayList<>();
@@ -182,7 +194,6 @@ public class InfoRepositoryMock {
         pessoaList.add(pessoa2);
 
         List<Series> seriesList = new ArrayList<>();
-
         Series prisonBreak = new Series();
         prisonBreak.setIdPessoa(1);
         prisonBreak.setTitulo("Prison Break");
@@ -193,7 +204,9 @@ public class InfoRepositoryMock {
         prisonBreak.setStreaming("Fox Broadcasting Company");
 
         seriesList.add(prisonBreak);
+        pessoa.setSeries(seriesList);
 
+        List<Series> seriesList2 = new ArrayList<>();
         Series goodGirls = new Series();
         goodGirls.setIdPessoa(2);
         goodGirls.setTitulo("Good Girls");
@@ -202,6 +215,9 @@ public class InfoRepositoryMock {
         goodGirls.setUltimoEpisodio("22/07/2021");
         goodGirls.setElenco("Christina Hendricks, Retta, Mae Whitman, Manny Montana, Reno Wilson, Matthew Lillard");
         goodGirls.setStreaming("NBC");
+
+        seriesList2.add(goodGirls);
+        pessoa2.setSeries(seriesList2);
 
         Series blindspot = new Series();
         blindspot.setIdPessoa(2);
@@ -212,9 +228,20 @@ public class InfoRepositoryMock {
         blindspot.setElenco("Jaimie Alexander, Sullivan Stapleton, Rob Brown, Audrey Esparza, Ashley Johnson, Ennis Esmer'");
         blindspot.setStreaming("National Broadcasting Company");
 
-        seriesList.add(goodGirls);
+        seriesList2.add(blindspot);
 
-        pessoa.setSeries(seriesList);
+        Series pll = new Series();
+        pll.setIdPessoa(2);
+        pll.setTitulo("Pretty Little Liars");
+        pll.setDiretor("I. Marlene King");
+        pll.setPrimeiroEpisodio("06/06/2010");
+        pll.setUltimoEpisodio("21/06/2016");
+        pll.setElenco("Troian Bellisario, Lucy Hale, Ashley Benson, Shay Mitchell");
+        pll.setStreaming("Freeform");
+
+        seriesList2.add(pll);
+
+        pessoa2.setSeries(seriesList2);
 
         return new InfoProvedor(pessoaList);
     }
