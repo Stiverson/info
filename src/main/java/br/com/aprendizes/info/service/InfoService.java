@@ -1,10 +1,7 @@
 package br.com.aprendizes.info.service;
 
 import br.com.aprendizes.info.domain.provedor.*;
-import br.com.aprendizes.info.domain.response.CursosResponse;
-import br.com.aprendizes.info.domain.response.DadoPessoalResponse;
-import br.com.aprendizes.info.domain.response.FilmesResponse;
-import br.com.aprendizes.info.domain.response.ViagensResponse;
+import br.com.aprendizes.info.domain.response.*;
 import br.com.aprendizes.info.util.*;
 import org.springframework.stereotype.Service;
 
@@ -62,6 +59,16 @@ public class InfoService {
         return new ViagensResponse(viagensListResponse);
     }
 
+    public SeriesResponse obterSeries(Integer idPessoa) {
+        List<Series> seriesListProvedor = SeriesRepositoryMock.mockSeriesProvedorResonce();
+        List<Series> seriesListResponse = new ArrayList<>();
+        for (Series series : seriesListProvedor) {
+            if (idPessoa == series.getIdPessoa()) {
+                seriesListResponse.add(series);
+            }
+        }
+        return new SeriesResponse(seriesListResponse);
+    }
 }
 
 

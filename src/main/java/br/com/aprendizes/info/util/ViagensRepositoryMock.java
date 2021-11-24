@@ -43,7 +43,7 @@ public class ViagensRepositoryMock {
         Viagens viagens5 = new Viagens();
         viagens5.setIdPessoa(2);
         viagens5.setCidade("Olimpia");
-        viagens5.setLocal("");
+        viagens5.setLocal("l");
         viagens5.setData("10/12/2017");
         viagensList.add(viagens5);
 

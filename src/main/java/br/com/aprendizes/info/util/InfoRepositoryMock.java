@@ -181,6 +181,41 @@ public class InfoRepositoryMock {
         pessoaList.add(pessoa);
         pessoaList.add(pessoa2);
 
+        List<Series> seriesList = new ArrayList<>();
+
+        Series prisonBreak = new Series();
+        prisonBreak.setIdPessoa(1);
+        prisonBreak.setTitulo("Prison Break");
+        prisonBreak.setDiretor("Paul Scheuring");
+        prisonBreak.setPrimeiroEpisodio("29/08/2005");
+        prisonBreak.setUltimoEpisodio("30/05/2017");
+        prisonBreak.setElenco("Wentworth Miller, Dominic Purcell, Sarah Wayne Callies");
+        prisonBreak.setStreaming("Fox Broadcasting Company");
+
+        seriesList.add(prisonBreak);
+
+        Series goodGirls = new Series();
+        goodGirls.setIdPessoa(2);
+        goodGirls.setTitulo("Good Girls");
+        goodGirls.setDiretor("Jenna Bans");
+        goodGirls.setPrimeiroEpisodio("24/02/2018");
+        goodGirls.setUltimoEpisodio("22/07/2021");
+        goodGirls.setElenco("Christina Hendricks, Retta, Mae Whitman, Manny Montana, Reno Wilson, Matthew Lillard");
+        goodGirls.setStreaming("NBC");
+
+        Series blindspot = new Series();
+        blindspot.setIdPessoa(2);
+        blindspot.setTitulo("Blindspot");
+        blindspot.setDiretor("Martin Gero, Brendan Gall");
+        blindspot.setPrimeiroEpisodio("21/09/2015");
+        blindspot.setUltimoEpisodio("23/07/2020");
+        blindspot.setElenco("Jaimie Alexander, Sullivan Stapleton, Rob Brown, Audrey Esparza, Ashley Johnson, Ennis Esmer'");
+        blindspot.setStreaming("National Broadcasting Company");
+
+        seriesList.add(goodGirls);
+
+        pessoa.setSeries(seriesList);
+
         return new InfoProvedor(pessoaList);
     }
 
