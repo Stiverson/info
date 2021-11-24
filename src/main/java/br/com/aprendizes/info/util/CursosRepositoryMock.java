@@ -21,7 +21,7 @@ public class CursosRepositoryMock {
         Curso curso2 = new Curso();
         curso2.setIdPessoa(1);
         curso2.setTitulo("PYTHON");
-        curso2.setInstituicao("TECHCAMPUS");
+        curso2.setInstituicao("Techcampus");
 
         cursoList.add(curso2);
 
