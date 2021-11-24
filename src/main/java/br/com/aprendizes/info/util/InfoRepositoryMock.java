@@ -31,26 +31,38 @@ public class InfoRepositoryMock {
 
         List<Filme> filmeList = new ArrayList<>();
 
-        Filme duna = new Filme();
-        duna.setIdPessoa(1);
-        duna.setTitulo("Duna");
-        duna.setDiretor("Denis Vileneve");
-        duna.setDuracao("2H,28");
-        duna.setData_lancamento("21/10/2021");
-        duna.setElenco("");
-        duna.setStreaming("HBOMAX");
+        Filme truqueDeMestre = new Filme();
+        truqueDeMestre.setIdPessoa(1);
+        truqueDeMestre.setTitulo("truque de Mestre");
+        truqueDeMestre.setDiretor("Louis Leterrier");
+        truqueDeMestre.setDuracao("1H,55");
+        truqueDeMestre.setData_lancamento("05/07/2013");
+        truqueDeMestre.setElenco("Jesse Eisemberg(Atlas), Woody Harrelson(McKinny), Dave Franco(Jack), Isla fisher(Harley)");
+        truqueDeMestre.setStreaming("Netflix");
+
+        filmeList.add(truqueDeMestre);
 
         Filme spiderverse = new Filme();
         spiderverse.setIdPessoa(1);
-        spiderverse.setTitulo("Homem Aranha no Aranha verso");
-        spiderverse.setDiretor("");
-        spiderverse.setDuracao("");
-        spiderverse.setData_lancamento("");
-        spiderverse.setElenco("");
-        spiderverse.setStreaming("Netflix");
+        spiderverse.setTitulo("Homem Aranha no Aranhaverso");
+        spiderverse.setDiretor("Peter Ramsey, Rodney Rothman, Bob Persichetti");
+        spiderverse.setDuracao("1H,56");
+        spiderverse.setData_lancamento("10/01/2019");
+        spiderverse.setElenco("Miles Morales, Homem-Aranha,Spider-Women,Gatuno, Rei do Crime,");
+        spiderverse.setStreaming("Telecine");
 
-        filmeList.add(duna);
         filmeList.add(spiderverse);
+
+        Filme chappie = new Filme();
+        chappie.setIdPessoa(1);
+        chappie.setTitulo("Chappie");
+        chappie.setDiretor("Neill Blomkamp");
+        chappie.setDuracao("2H,00");
+        chappie.setData_lancamento("16/04/2015");
+        chappie.setElenco("Hugh Jackman(Vicent), Dev Patel(Deon), Sharlto Copley(Chappie)");
+        chappie.setStreaming("Netflix");
+
+        filmeList.add(chappie);
 
         pessoa.setFilmes(filmeList);
 
