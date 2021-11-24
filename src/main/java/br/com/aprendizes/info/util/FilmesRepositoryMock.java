@@ -33,7 +33,7 @@ public class FilmesRepositoryMock {
         filmeList.add(spiderverse);
 
         Filme chappie = new Filme();
-        chappie.setIdPessoa(2);
+        chappie.setIdPessoa(1);
         chappie.setTitulo("Chappie");
         chappie.setDiretor("Neill Blomkamp");
         chappie.setDuracao("2H,00");
